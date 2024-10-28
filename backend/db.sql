@@ -21,5 +21,9 @@ INSERT INTO movies (director, movie, year, actors, genres) VALUES
 ('Denis Villeneuve', 'Sicario', 2015, ARRAY['Emily Blunt', 'Josh Brolin', 'Benicio Del Toro'], ARRAY['Crime', 'Action', 'Drama']),
 ('Ben Affleck', 'Gone Baby Gone', 2007, ARRAY['Morgan Freeman', 'Ed Harris', 'Casey Affleck'], ARRAY['Crime', 'Mystery', 'Drama']);
 
+INSERT INTO movies (director, movie, year, actors, genres)
+VALUES ('Ridley Scott', 'Gladiator', 2000, ARRAY['Russell Crowe', 'Joaquin Phoenix', 'Connie Nielsen'], ARRAY['Action', 'Adventure', 'Drama']);
+  
+
 
 SELECT * FROM movies;

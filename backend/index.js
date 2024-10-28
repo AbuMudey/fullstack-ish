@@ -9,6 +9,9 @@ dotenv.config()
 // Konfigurera och anslut till PostgreSQL-klienten
 const client = new Client({
   connectionString: process.env.PGURI,
+  ssl: {
+    rejectUnauthorized: false 
+  }
 })
 
 client.connect()
