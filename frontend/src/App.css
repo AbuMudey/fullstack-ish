@@ -1,42 +1,62 @@
+/* Centrerar och begränsar bredden */
 #root {
-  max-width: 1280px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Titel på sidan */
+h1 {
+  font-size: 40px;
+  color: #1e3092;
+  margin-bottom: 20px;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Lista över filmer */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
+/* Kort för innehåll */
 .card {
-  padding: 2em;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
-.read-the-docs {
-  color: #888;
+/* Individuella filmkort */
+li {
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Filmnamn*/
+strong {
+  font-size: 20px;
+}
+
+/* Filmuppgifter */
+li span {
+  display: block;
+  margin: 5px;
+  font-size: 15;
+  color: #000000;
+}
+
+/* Genrer och skådespelare */
+.genres, .actors {
+  font-weight: 600;
+  color: #666;
+  font-size: 15px;
 }

@@ -20,14 +20,13 @@ function App() {
     <>
       <h1>Filmer</h1>
       <div className="card">
-        <h2>Lista över filmer</h2>
         <ul>
           {movies.map((movie) => (
             <li key={movie.id}>
-              <strong>{movie.movie}</strong> ({movie.year})<br />
-              Regissör: {movie.director}<br />
-              Skådespelare: {movie.actors.join(', ')}<br />
-              Genrer: {movie.genres.join(', ')}
+              <strong>{movie.movie}</strong> <span>({movie.year})</span>
+              <span>Regissör: {movie.director}</span>
+              <span className="actors">Skådespelare: {movie.actors.join(', ')}</span>
+              <span className="genres">Genrer: {movie.genres.join(', ')}</span>
             </li>
           ))}
         </ul>
