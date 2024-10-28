@@ -36,8 +36,4 @@ app.get('/api', async (req, res) => {
   }
 })
 
-// Starta servern och lyssna på rätt port
-const PORT = process.env.PORT || 3000
-app.listen(PORT, () => {
-  console.log(`Servern är redo på http://localhost:${PORT}`)
-})
+
