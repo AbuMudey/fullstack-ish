@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 Render:
 https://fullstack-ish-fflk.onrender.com/
 
-
+//
 beskriva vad Content Delivery Networks och monitorering är, vad dessa tjänster har för fördelar samt ge exempel på tjänster som kan användas för detta
 
 Content Delivery Networks (CDN) är geografiskt distribuerade nätverk av servrar som lagrar och levererar innehåll (data). Genom att lagra kopior av innehåll på servrar i olika delar av världen kan en CDN minska laddningstiden genom att låta användare hämta data från en server som är fysiskt nära dem, istället för från en central server som kan vara långt borta.
