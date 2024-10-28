@@ -5,14 +5,14 @@ function App() {
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
-    fetch('/api') // Hämta från /api endpoint
+    fetch('/api') 
       .then((response) => {
         if (!response.ok) {
           throw new Error('Nätverksrespons var inte okej')
         }
         return response.json()
       })
-      .then((data) => setMovies(data)) // Spara filmerna i state
+      .then((data) => setMovies(data)) 
       .catch((error) => console.error('Error fetching movies:', error))
   }, [])
 
